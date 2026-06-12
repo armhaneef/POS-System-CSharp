@@ -1,0 +1,596 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{74F95E12-CA44-491D-BF8B-26260C15F928}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>main_project</RootNamespace>
+    <AssemblyName>main project</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="business details.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="business details.Designer.cs">
+      <DependentUpon>business details.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Customer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Customer.Designer.cs">
+      <DependentUpon>Customer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="invoice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="invoice.Designer.cs">
+      <DependentUpon>invoice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="payments.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="payments.Designer.cs">
+      <DependentUpon>payments.cs</DependentUpon>
+    </Compile>
+    <Compile Include="pos_dbDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>pos_dbDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="pos_dbDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>pos_dbDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="pos_dbDataSet10.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>pos_dbDataSet10.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="pos_dbDataSet11.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>pos_dbDataSet11.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="pos_dbDataSet12.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>pos_dbDataSet12.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="pos_dbDataSet13.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>pos_dbDataSet13.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="pos_dbDataSet14.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>pos_dbDataSet14.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="pos_dbDataSet15.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>pos_dbDataSet15.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="pos_dbDataSet16.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>pos_dbDataSet16.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="pos_dbDataSet17.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>pos_dbDataSet17.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="pos_dbDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>pos_dbDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="pos_dbDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>pos_dbDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="pos_dbDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>pos_dbDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="pos_dbDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>pos_dbDataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="pos_dbDataSet6.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>pos_dbDataSet6.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="pos_dbDataSet7.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>pos_dbDataSet7.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="pos_dbDataSet8.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>pos_dbDataSet8.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="pos_dbDataSet9.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>pos_dbDataSet9.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="purchasing summery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="purchasing summery.Designer.cs">
+      <DependentUpon>purchasing summery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="stock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="stock.Designer.cs">
+      <DependentUpon>stock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="stock_view.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="stock_view.Designer.cs">
+      <DependentUpon>stock_view.cs</DependentUpon>
+    </Compile>
+    <Compile Include="work staion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="work staion.Designer.cs">
+      <DependentUpon>work staion.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="business details.resx">
+      <DependentUpon>business details.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Customer.resx">
+      <DependentUpon>Customer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="invoice.resx">
+      <DependentUpon>invoice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="payments.resx">
+      <DependentUpon>payments.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="purchasing summery.resx">
+      <DependentUpon>purchasing summery.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="stock.resx">
+      <DependentUpon>stock.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="stock_view.resx">
+      <DependentUpon>stock_view.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="work staion.resx">
+      <DependentUpon>work staion.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="pos_dbDataSet.xsc">
+      <DependentUpon>pos_dbDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="pos_dbDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>pos_dbDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="pos_dbDataSet.xss">
+      <DependentUpon>pos_dbDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="pos_dbDataSet1.xsc">
+      <DependentUpon>pos_dbDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="pos_dbDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>pos_dbDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="pos_dbDataSet1.xss">
+      <DependentUpon>pos_dbDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="pos_dbDataSet10.xsc">
+      <DependentUpon>pos_dbDataSet10.xsd</DependentUpon>
+    </None>
+    <None Include="pos_dbDataSet10.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>pos_dbDataSet10.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="pos_dbDataSet10.xss">
+      <DependentUpon>pos_dbDataSet10.xsd</DependentUpon>
+    </None>
+    <None Include="pos_dbDataSet11.xsc">
+      <DependentUpon>pos_dbDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="pos_dbDataSet11.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>pos_dbDataSet11.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="pos_dbDataSet11.xss">
+      <DependentUpon>pos_dbDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="pos_dbDataSet12.xsc">
+      <DependentUpon>pos_dbDataSet12.xsd</DependentUpon>
+    </None>
+    <None Include="pos_dbDataSet12.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>pos_dbDataSet12.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="pos_dbDataSet12.xss">
+      <DependentUpon>pos_dbDataSet12.xsd</DependentUpon>
+    </None>
+    <None Include="pos_dbDataSet13.xsc">
+      <DependentUpon>pos_dbDataSet13.xsd</DependentUpon>
+    </None>
+    <None Include="pos_dbDataSet13.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>pos_dbDataSet13.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="pos_dbDataSet13.xss">
+      <DependentUpon>pos_dbDataSet13.xsd</DependentUpon>
+    </None>
+    <None Include="pos_dbDataSet14.xsc">
+      <DependentUpon>pos_dbDataSet14.xsd</DependentUpon>
+    </None>
+    <None Include="pos_dbDataSet14.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>pos_dbDataSet14.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="pos_dbDataSet14.xss">
+      <DependentUpon>pos_dbDataSet14.xsd</DependentUpon>
+    </None>
+    <None Include="pos_dbDataSet15.xsc">
+      <DependentUpon>pos_dbDataSet15.xsd</DependentUpon>
+    </None>
+    <None Include="pos_dbDataSet15.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>pos_dbDataSet15.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="pos_dbDataSet15.xss">
+      <DependentUpon>pos_dbDataSet15.xsd</DependentUpon>
+    </None>
+    <None Include="pos_dbDataSet16.xsc">
+      <DependentUpon>pos_dbDataSet16.xsd</DependentUpon>
+    </None>
+    <None Include="pos_dbDataSet16.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>pos_dbDataSet16.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="pos_dbDataSet16.xss">
+      <DependentUpon>pos_dbDataSet16.xsd</DependentUpon>
+    </None>
+    <None Include="pos_dbDataSet17.xsc">
+      <DependentUpon>pos_dbDataSet17.xsd</DependentUpon>
+    </None>
+    <None Include="pos_dbDataSet17.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>pos_dbDataSet17.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="pos_dbDataSet17.xss">
+      <DependentUpon>pos_dbDataSet17.xsd</DependentUpon>
+    </None>
+    <None Include="pos_dbDataSet2.xsc">
+      <DependentUpon>pos_dbDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="pos_dbDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>pos_dbDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="pos_dbDataSet2.xss">
+      <DependentUpon>pos_dbDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="pos_dbDataSet3.xsc">
+      <DependentUpon>pos_dbDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="pos_dbDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>pos_dbDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="pos_dbDataSet3.xss">
+      <DependentUpon>pos_dbDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="pos_dbDataSet4.xsc">
+      <DependentUpon>pos_dbDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="pos_dbDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>pos_dbDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="pos_dbDataSet4.xss">
+      <DependentUpon>pos_dbDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="pos_dbDataSet5.xsc">
+      <DependentUpon>pos_dbDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="pos_dbDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>pos_dbDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="pos_dbDataSet5.xss">
+      <DependentUpon>pos_dbDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="pos_dbDataSet6.xsc">
+      <DependentUpon>pos_dbDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="pos_dbDataSet6.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>pos_dbDataSet6.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="pos_dbDataSet6.xss">
+      <DependentUpon>pos_dbDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="pos_dbDataSet7.xsc">
+      <DependentUpon>pos_dbDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="pos_dbDataSet7.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>pos_dbDataSet7.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="pos_dbDataSet7.xss">
+      <DependentUpon>pos_dbDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="pos_dbDataSet8.xsc">
+      <DependentUpon>pos_dbDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="pos_dbDataSet8.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>pos_dbDataSet8.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="pos_dbDataSet8.xss">
+      <DependentUpon>pos_dbDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="pos_dbDataSet9.xsc">
+      <DependentUpon>pos_dbDataSet9.xsd</DependentUpon>
+    </None>
+    <None Include="pos_dbDataSet9.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>pos_dbDataSet9.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="pos_dbDataSet9.xss">
+      <DependentUpon>pos_dbDataSet9.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3809828.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\38098281.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\81959da6-00b1-4ad3-8779-e89ddfabb40f.tmp" />
+    <None Include="Resources\log-out.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2933880.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2964973.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\invoice %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\log-out1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\refresh %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\service %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\invoice %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\report.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\payment-method %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\in-stock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add-to-cart.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\clear.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\oversight.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\printer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\action.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\oversight1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\action1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\oversight2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\inkjet.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\clean.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eraser.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add-to-cart1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\save.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\go-back.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\previous.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\How-to-write-an-invoice.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\How-to-write-an-invoice1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1687337188_Invoice.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\How-to-write-an-invoice2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Download icon online invoice illustration_ invoice icon for free.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\invoice_4862191 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eraser %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bill %282%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bill2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bill %282%292.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Download icon online invoice illustration_ invoice icon for free1.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\svg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\svg1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\business-report.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eraser %281%292.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\update.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\captcha.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\captcha1.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
